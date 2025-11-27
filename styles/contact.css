@@ -1,51 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
 }
 
-:root {
-  --green: #2e6f40;
-  --lightgreen: #68ba7f;
-  --hovergreen: #56a76f;
-  --emailgroen: #B5EAB5;
-  --rankingcolor: #B5E9C4;
-  --emailgroendarkmode: #1EB05C;
-  --backgrounddarkmode: #93CDA3;
-}
-
-h1 {
-  font-family: "Barlow", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  line-height: 1.4;
-}
-
-h2,
-h3,
-h4 {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  line-height: 1.4;
-}
-
-p {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-a {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.4;
+p, a, li {
+  color: var(--lightmode-text);
   text-decoration: none;
   cursor: pointer;
 }
@@ -58,8 +16,8 @@ header {
 hr {
   width: 100%;
   height: 25px;
-  background-color: var(--green);
-  border: 1px solid var(--green);
+  background-color: var(--primary-color-dark);
+  border: 1px solid var(--primary-color-dark);
 }
 
 /* hamburger menu style */
@@ -136,7 +94,7 @@ hr {
 }
 
 .nav li a:hover {
-  color: var(--hovergreen);
+  color: var(--primary-color-dark);
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -213,18 +171,13 @@ main {
 }
 
 .member-name {
-    font-size: 17px;
     font-weight: bolder;
 }
 
 .member-rank {
     margin-top: -15px;
     text-align: center;
-    color: var(--green);
-
-    @media (prefers-color-scheme: dark) {
-        color: var(--rankingcolor);
-    }
+    color: var(--primary-color-dark);
 }
 
 .card a {
@@ -237,11 +190,11 @@ main {
     /* de a neemt nu 100% van de ruimte in de card zelf */
     width: 100%;
     border-radius: 50px;
-    background-color: var(--emailgroen);
+    background-color: var(--primary-color-lightest);
 }
 
 footer {
-  background-color: var(--green);
+  background-color: var(--primary-color-dark);
   padding-top: 1px;
   padding-bottom: 20px;
 
@@ -313,6 +266,7 @@ footer {
 
   p {
     font-weight: 200;
+    color: white;
   }
 
   @media screen and (min-width: 768px) {
