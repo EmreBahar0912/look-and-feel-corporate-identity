@@ -10,6 +10,7 @@ a {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -36,7 +37,12 @@ hr {
   transition: 0.3s ease;
 
   @media screen and (min-width: 1300px) {
-    display: hidden;
+    position: static;
+    background: none;
+    order: 1;
+    width: 100%;
+    height: unset;
+    max-width: unset;
   }
 }
 
@@ -48,6 +54,10 @@ hr {
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media screen and (min-width: 1300px) {
+    display: none;
+  }
 }
 
 .hamburger-menu.is-open {
@@ -63,7 +73,7 @@ hr {
   cursor: pointer;
 
   @media screen and (min-width: 1300px) {
-    display: hidden;
+    display: none;
   }
 }
 
@@ -78,6 +88,11 @@ hr {
 
 .nav {
   list-style: none;
+
+  @media screen and (min-width: 1300px) {
+    display: flex;
+    gap: 2.4em;
+  }
 }
 
 .nav li {
