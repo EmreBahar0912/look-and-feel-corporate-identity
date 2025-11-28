@@ -201,13 +201,14 @@ h1 {
 
 .carousel a {
   background-color: var(--primary-color-lightest);
-  color: white;
+  color: black;
   border-radius: 25px;
   padding: 10px;
 }
 
 .carousel a:hover {
   background-color: var(--primary-color-dark);
+  color: white;
   transition: opacity 0.5s ease-in-out;
 }
 
